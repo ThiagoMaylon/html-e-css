@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>
+        tente abrir esse site em varios dispositivos
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="iamgem dinamica grande">
+    </picture>
+    <h2>vamos por musica no site.....</h2>
+    <p>
+        <audio src="midia/Valerie Plain - Rondo Brothers.mp3" controls></audio>
+        <!-- formatos compativeis...   mp3,wav, ogg-->
+    </p>
+</body>
+</html>

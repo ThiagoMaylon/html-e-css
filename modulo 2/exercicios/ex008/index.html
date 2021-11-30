@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(22, 22, 22);
+        }
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        a:active{
+            color: red;
+        
+        }
+        a:before{
+            content: '☛   ';
+        }
+   
+     
+        ul{
+            list-style-type: none;
+        }
+        .especial::after{
+            content: '  ☚';
+        }
+        .especial:hover{
+            background-color: rgba(228, 33, 33, 0.363);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blanck" rel="external">youtube</a></li>
+        <li><a href="https://www.facebook.com/ "target="_blanck" rel="external" class="especial">fecebook</a></li>
+        <li><a href="https://www.google.com.br/ "target="_blanck" rel="external">google</a></li>
+    </ul>
+</body>
+</html>
